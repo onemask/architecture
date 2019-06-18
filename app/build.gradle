@@ -82,5 +82,49 @@ dependencies {
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.31"
 
+    //LifeCycle
+    def lifecycle_version = "1.1.1"
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    //RoomVersion
+    def room_version = "1.1.1"
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    kapt "android.arch.persistence.room:compiler:$room_version"
+    // optional - RxJava support for Room
+    implementation "android.arch.persistence.room:rxjava2:$room_version"
+    // Test helpers
+    testImplementation "android.arch.persistence.room:testing:$room_version"
+
+    //Dagger2
+    def daggerVer = "2.17"
+    implementation "com.google.dagger:dagger-android:$daggerVer"
+    implementation "com.google.dagger:dagger-android-support:$daggerVer"
+    // if you use the support libraries
+    kapt "com.google.dagger:dagger-android-processor:$daggerVer"
+    kapt "com.google.dagger:dagger-compiler:$daggerVer"
+
+    //design support library
+    def supportLibVersion = "28.0.0"
+    implementation "com.android.support:design:$supportLibVersion"
+
+    //rxjava
+    implementation "io.reactivex.rxjava2:rxjava:2.2.7"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.3.0'
+
+    //paging
+    def paging_version = "1.0.1"
+    implementation "android.arch.paging:runtime:$paging_version"
+
+    //multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //CardView
+    implementation "com.android.support:cardview-v7:$supportLibVersion"
+
+    //seletion
+    implementation "com.android.support:recyclerview-selection:$supportLibVersion"
+
 
 }
