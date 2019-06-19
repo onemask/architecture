@@ -7,5 +7,5 @@ import androidx.fragment.app.Fragment
 fun AppCompatActivity.replaceFragment(@IdRes id: Int, supportFragment: Fragment){
     supportFragmentManager.beginTransaction()
         .replace(id,supportFragment)
-        .commitNow()
+        .commit()
 }
