@@ -1,6 +1,6 @@
 package android.architecture.mvvm.viewmodel
 
-import android.architecture.mvvm.model.data.Task
+import android.architecture.mvvm.model.Task
 import android.architecture.mvvm.util.Event
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
