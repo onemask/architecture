@@ -14,7 +14,12 @@ class MainActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if(savedInstanceState==null){
+
+        //kotlin null 처리로 refactoring
+        /* if (savedInstanceState==null){
+            replaceFragment(R.id.container,MainFragment())
+        }*/
+        savedInstanceState?:run {
             replaceFragment(R.id.container,MainFragment())
         }
     }
