@@ -9,7 +9,7 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-abstract class MainFragmentModule {
+class MainFragmentModule {
 
     @Provides
     @FragmentScope
@@ -18,8 +18,7 @@ abstract class MainFragmentModule {
             activity.layoutInflater,
             R.layout.fragment_main,
             null,
-            false
-        )
+            false)
 
     @Provides
     @FragmentScope
