@@ -7,15 +7,18 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import dagger.android.support.DaggerFragment
+import javax.inject.Inject
 
 
-class MainFragment : Fragment() {
+class MainFragment : DaggerFragment() {
 
+    @Inject
+    lateinit var binding : FragmentMainBinding
 
-    private lateinit var binding : FragmentMainBinding
-    private lateinit var viewModel: MainFragmentViewModel
+    @Inject
+    lateinit var viewModel: MainFragmentViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) = binding.root
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
