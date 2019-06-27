@@ -2,10 +2,10 @@
 <layout xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <import type="android.architecture.mvvm.feature.main.MainMenu"/>
+        <import type="android.architecture.mvvm.feature.main.model.MainMenu"/>
         <variable
                 name="viewmodel"
-                type="android.architecture.mvvm.feature.main.MainFragmentViewModel"/>
+                type="android.architecture.mvvm.feature.main.vm.MainFragmentViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

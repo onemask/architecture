@@ -2,6 +2,8 @@ package android.architecture.mvvm.feature.main
 
 
 import android.architecture.mvvm.databinding.FragmentMainBinding
+import android.architecture.mvvm.feature.main.model.MainMenu
+import android.architecture.mvvm.feature.main.vm.MainFragmentViewModel
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater

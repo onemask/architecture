@@ -1,7 +1,7 @@
 package android.architecture.mvvm.di
 
 import android.architecture.mvvm.feature.main.MainActivity
-import android.architecture.mvvm.feature.main.MainActivityModule
+import android.architecture.mvvm.feature.main.di.MainActivityModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

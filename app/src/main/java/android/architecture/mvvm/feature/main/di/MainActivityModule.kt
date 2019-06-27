@@ -1,9 +1,11 @@
-package android.architecture.mvvm.feature.main
+package android.architecture.mvvm.feature.main.di
 
 import android.architecture.mvvm.R
 import android.architecture.mvvm.databinding.ActivityMainBinding
 import android.architecture.mvvm.di.ActivityScope
 import android.architecture.mvvm.di.FragmentScope
+import android.architecture.mvvm.feature.main.MainActivity
+import android.architecture.mvvm.feature.main.MainFragment
 import androidx.databinding.DataBindingUtil
 import dagger.Module
 import dagger.Provides
